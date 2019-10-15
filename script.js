@@ -87,9 +87,27 @@ if (time.isBefore(moment('17', 'hh'))) {
 if (time.isSame(moment('17', 'hh'))) {
     $("#5PM").addClass(".present");
 }
-var saveEvent = document.querySelectorAll("input").value;
+
+var saveEvent = document.querySelectorAll("input[type='text']");
 
 $(".bclass").on("click", function() {
-    localStorage.setItem('text', saveEvent);
-       console.log("test");
+    var id = $(this).val();
+    var msg = $('#' + id).val();
+    window.localStorage.setItem(id, msg);
+    console.log(msg);
     })
+
+   function load(id) {
+            var storedData = localStorage.getItem(id);
+            if(storedData) {
+                $('#' + id).val(storedData);
+            }
+            //console.log(id);
+        }
+       
+       var times = '9AM, 10AM, 11AM, 12PM, 1PM, 2PM, 3PM, 4PM, 5PM'.split(', ');
+       console.log(times);
+       times.forEach(function (time) {
+           load(time);
+       })
+       load(); 
