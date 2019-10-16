@@ -7,85 +7,93 @@ setInterval(update, 1000);
 var time = moment();
 
 if (time.isAfter(moment('9', 'hh'))) {
-    $("#9AM").addClass(".past");
+    $("#9AM").addClass("past");
 }
 if (time.isBefore(moment('9', 'hh'))) {
-    $("#9AM").addClass(".future");
+    $("#9AM").addClass("future");
 }
-if (time.isSame(moment('9', 'hh'))) {
-    $("#9AM").addClass(".present");
+if (time.isBetween(moment('9', 'hh') && moment('10', 'hh'))) {
+    $("#9AM").addClass("present");
 }
+
 if (time.isAfter(moment('10', 'hh'))) {
-    $("#10AM").addClass(".past");
+    $("#10AM").addClass("past");
 }
 if (time.isBefore(moment('10', 'hh'))) {
-    $("#10AM").addClass(".future");
+    $("#10AM").addClass("future");
 }
-if (time.isSame(moment('10', 'hh'))) {
-    $("#10AM").addClass(".present");
+if (time.isBetween(moment('10', 'hh') && moment('11', 'hh'))) {
+    $("#10AM").addClass("present");
 }
+
 if (time.isAfter(moment('11', 'hh'))) {
-    $("#11AM").addClass(".past");
+    $("#11AM").addClass("past");
 }
 if (time.isBefore(moment('11', 'hh'))) {
-    $("#11AM").addClass(".future");
+    $("#11AM").addClass("future");
 }
-if (time.isSame(moment('11', 'hh'))) {
-    $("#11AM").addClass(".present");
+if (time.isBetween(moment('11', 'hh') && moment('12', 'hh'))) {
+    $("#11AM").addClass("present");
 }
+
 if (time.isAfter(moment('12', 'hh'))) {
-    $("#12PM").addClass(".past");
+    $("#12PM").addClass("past");
 }
 if (time.isBefore(moment('12', 'hh'))) {
-    $("#12PM").addClass(".future");
+    $("#12PM").addClass("future");
 }
-if (time.isSame(moment('12', 'hh'))) {
-    $("#12PM").addClass(".present");
+if (time.isBetween(moment('12', 'hh') && moment('13', 'hh'))) {
+    $("#12PM").addClass("present");
 }
+
 if (time.isAfter(moment('13', 'hh'))) {
-    $("#1PM").addClass(".past");
+    $("#1PM").addClass("past");
 }
 if (time.isBefore(moment('13', 'hh'))) {
-    $("#1PM").addClass(".future");
+    $("#1PM").addClass("future");
 }
-if (time.isSame(moment('13', 'hh'))) {
-    $("#1PM").addClass(".present");
+if (time.isBetween(moment('13', 'hh') && moment('14', 'hh'))) {
+    $("#1PM").addClass("present");
 }
+
 if (time.isAfter(moment('14', 'hh'))) {
-    $("#2PM").addClass(".past");
+    $("#2PM").addClass("past");
 }
 if (time.isBefore(moment('14', 'hh'))) {
-    $("#2PM").addClass(".future");
+    $("#2PM").addClass("future");
 }
-if (time.isSame(moment('14', 'hh'))) {
-    $("#2PM").addClass(".present");
+if (time.isBetween(moment('14', 'hh') && moment('15', 'hh'))) {
+    $("#2PM").addClass("present");
 }
+
 if (time.isAfter(moment('15', 'hh'))) {
-    $("#3PM").addClass(".past");
+    $("#3PM").addClass("past");
 }
 if (time.isBefore(moment('15', 'hh'))) {
-    $("#3PM").addClass(".future");
+    $("#3PM").addClass("future");
 }
-if (time.isSame(moment('15', 'hh'))) {
-    $("#3PM").addClass(".present");
+if (time.isBetween(moment('15', 'hh') && moment('16', 'hh'))) {
+    $("#3PM").addClass("present");
 }
+
 if (time.isAfter(moment('16', 'hh'))) {
-    $("#4PM").addClass(".past");
+    $("#4PM").addClass("past");
 }
 if (time.isBefore(moment('16', 'hh'))) {
-    $("#4PM").addClass(".future");
+    $("#4PM").addClass("future");
 }
-if (time.isSame(moment('16', 'hh'))) {
-    $("#4PM").addClass(".present");
+if (time.isBetween(moment('16', 'hh') && moment('17', 'hh'))) {
+    $("#4PM").addClass("present");
 }
+
 if (time.isAfter(moment('17', 'hh'))) {
-    $("#5PM").addClass(".past");
+    $("#5PM").addClass("past");
 }
 if (time.isBefore(moment('17', 'hh'))) {
-    $("#5PM").addClass(".future");
+    $("#5PM").addClass("future");
 }
-if (time.isSame(moment('17', 'hh'))) {
-    $("#5PM").addClass(".present");
+if (time.isBetween(moment('17', 'hh') && moment('18', 'hh'))) {
+    $("#5PM").addClass("present");
 }
 
 var saveEvent = document.querySelectorAll("input[type='text']");
