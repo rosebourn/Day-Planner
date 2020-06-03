@@ -2,6 +2,8 @@ function update() {
   $("#currentDay").html(moment().format("LLLL"));
 }
 
+// testing ssh key
+
 setInterval(update, 1000);
 
 var time = moment();
